@@ -2,8 +2,8 @@
 window.TravelDining = (() => {
   const make = (id, name, city, area, menu, budget, hours = null) => ({id, name, city, area, menu, budget, hours, hoursVerifiedAt:null, dianping:{rating:null, source:null, verifiedAt:null}, googleMaps:{rating:null, source:null, verifiedAt:null}, storefront:null, source:null});
   const entries = [
-    make('chenpengpeng','陈鹏鹏卤鹅饭店','深圳','福田区域 · 分店待落实',['卤鹅拼盘','卤水豆腐','青菜＋米饭'],'¥70'),
-    make('baheli','八合里牛肉火锅','深圳','福田区域 · 分店待落实',['嫩肉、吊龙各一份','牛肉丸','粿条＋蔬菜'],'¥70'),
+    make('fenghuanglou','凤凰楼','深圳','华强北 · 门店与路线待落实',['虾饺','红米肠','叉烧包'],'¥80'),
+    make('huaxiange','华香鹅','深圳','笋岗 · 门店与路线待落实',['卤鹅拼盘','卤水豆腐','粿条汤'],'¥60'),
     make('australia','澳洲牛奶公司','香港','佐敦',['炒蛋多士','叉烧通粉','热奶茶'],'HK$75','07:30–22:00；周四常休'),
     make('kaikai','佳佳甜品','香港','佐敦',['芝麻糊','杏仁露','汤圆分食'],'HK$35','12:00–次日 03:00'),
     make('makman','麦文记面家','香港','佐敦',['鲜虾云吞面','鲮鱼球','蚝油菜心'],'HK$70'),
@@ -11,7 +11,6 @@ window.TravelDining = (() => {
     make('mainstreet','Main Street Bakery','香港','迪士尼 · 美国小镇大街',['当日甜点一份','咖啡两杯'],'HK$75'),
     make('explorer','Explorer’s Club Restaurant','香港','迪士尼 · 迷离庄园旁',['东南亚风味套餐两份','小食一份'],'HK$180'),
     make('tungchung-eatery','宜客乐 The Eatery','香港','东涌福朋喜来登酒店',['早餐自助：粥或蛋料理','面包、水果','咖啡或茶'],'HK$150'),
-    make('airport-tsuiwah','翠华餐厅','香港','香港国际机场 · 航站楼待落实',['烧味饭或汤面两份','奶茶'],'HK$110'),
     make('teksen','德盛饭店 Tek Sen Restaurant','槟城','George Town · Carnarvon Street',['双烤猪肉','炒豆苗','豆腐＋米饭'],'RM55','12:00–14:30 / 17:30–21:00'),
     make('beehwa','Bee Hwa Cafe','槟城','George Town',['咖喱面','云吞面','咖啡两杯'],'RM20','07:00–14:30'),
     make('ivy','Ivy’s Nyonya Cuisine','槟城','George Town',['娘惹咖喱鸡','参巴虾','小金杯＋米饭'],'RM60','12:00–15:00 / 18:00–21:00'),
@@ -28,14 +27,14 @@ window.TravelDining = (() => {
     make('nancy','Nancy’s Kitchen','马六甲','Taman Kota Laksamana',['鸡肉 Pongteh','Otak-otak','娘惹杂菜＋米饭'],'RM60','11:30–17:00'),
     make('jonker88','Jonker 88','马六甲','鸡场街',['煎蕊','Baba Laksa 分食'],'RM18','09:30–18:00'),
     make('famosa','古城鸡饭粒 Famosa Chicken Rice Ball','马六甲','鸡场街',['海南鸡分食','鸡饭粒','青菜'],'RM40'),
-    make('dtf-bukit','鼎泰丰','吉隆坡','Pavilion Bukit Jalil',['小笼包','蛋炒饭','青菜或酸辣汤'],'RM45'),
-    make('dtf-klcc','鼎泰丰','吉隆坡','Suria KLCC',['小笼包','蛋炒饭','青菜或酸辣汤'],'RM45'),
+    make('dacheng','大城堡鱼头 Restoran SKW','吉隆坡','Sri Petaling · 门店与路线待落实',['蒸鱼头分食','豆腐','青菜＋米饭'],'RM45'),
+    make('madamkwan','Madam Kwan’s','吉隆坡','Suria KLCC',['椰浆饭','Nasi Bojari 分食','蔬菜'],'RM45'),
     make('abc','ABC Bistro Café','吉隆坡','Sri Petaling',['Roti Canai','Dhal 豆咖喱','热拉茶'],'RM25'),
     make('pelita','Nasi Kandar Pelita','吉隆坡','Jalan Ampang',['Roti Canai','汤面或米饭','热拉茶'],'RM25'),
     make('ilforno','IL Forno · 凯悦尚萃酒店','吉隆坡','Hyatt Centric City Centre',['早餐自助：蛋料理','水果、面包','咖啡或茶'],'房价含早','06:30–10:30'),
     make('grandmamas','Grandmama’s','吉隆坡','KLIA T1 · 登机区域待落实',['椰浆饭或鸡饭两份','饮料'],'RM50'),
     make('mido','美都餐室 Mido Cafe','香港','油麻地',['焗猪扒饭','菠萝油','奶茶'],'HK$80'),
-    make('timho','添好运 Tim Ho Wan','香港','九龙 · 分店待落实',['酥皮焗叉烧包','虾饺','肠粉'],'HK$90'),
+    make('hop-yik-tai','合益泰小食','香港','深水埗 · 路线待落实',['肠粉两份','鱼蛋','豆浆'],'HK$35'),
     make('auntie','Auntie Gaik Lean’s Old School Eatery','槟城','George Town',['娘惹咖喱','Jiu Hu Char','小金杯＋米饭'],'RM90'),
     make('joohooi','Joo Hooi Cafe','槟城','Penang Road 周边',['亚参叻沙','煎蕊'],'RM23'),
     make('deen','Deen Maju Nasi Kandar','槟城','Jalan Gurdwara',['Nasi Kandar','咖喱鸡','蔬菜'],'RM33'),
@@ -48,13 +47,13 @@ window.TravelDining = (() => {
   ];
   const venues = Object.fromEntries(entries.map(v => [v.id, v]));
   const mealIds = [
-    ['chenpengpeng','baheli'], ['australia','kaikai','makman'],
-    [null,'royal','mainstreet','explorer'], ['tungchung-eatery','airport-tsuiwah',null,'teksen'],
+    ['fenghuanglou','huaxiange'], ['australia','kaikai','makman'],
+    [null,'royal','mainstreet','explorer'], ['tungchung-eatery',null,null,'teksen'],
     ['beehwa','ivy','cliff','888'], ['tohsoon','hameediyah',null,'mtr'],
     ['yutkee','koonkee','tokyo','kimlian'], ['oldtown','nancy','jonker88','famosa'],
-    ['oldtown','dtf-bukit',null,'abc'], ['oldtown','grandmamas',null]
+    ['oldtown','dacheng',null,'abc'], ['oldtown','grandmamas',null]
   ];
-  const alternatives = {mido:'mido',makman:'makman',timho:'timho',auntie:'auntie',joohooi:'joohooi',deen:'deen',hokow:'hokow',village:'village',merchant:'merchant',makko:'makko',chungwah:'chungwah',pakputra:'pakputra'};
+  const alternatives = {mido:'mido',makman:'makman',timho:'hop-yik-tai',auntie:'auntie',joohooi:'joohooi',deen:'deen',hokow:'hokow',village:'village',merchant:'merchant',makko:'makko',chungwah:'chungwah',pakputra:'pakputra'};
   function prepareMeals(days, galleries) {
     days.forEach((day, i) => day.meals.forEach((meal, j) => {meal[9] = mealIds[i][j] || null; const venue=venues[meal[9]]; if(venue){meal[1]=venue.name;meal[6]=venue.menu.join('＋');}}));
     const picks = {teksen:['teksen',1],ivy:['ivy',0],nancy:['nancy',1],jonker88:['cendol',1]};
@@ -96,13 +95,13 @@ window.TravelDining = (() => {
   function renderMeal(meal) {
     let id=meal[9];
     const centric=localStorage.getItem('tripKLHotelRoute')==='centric';
-    if(centric&&!id&&meal[0].startsWith('第二顿'))id='dtf-klcc';
+    if(centric&&!id&&meal[0].startsWith('第二顿'))id='madamkwan';
     if(!id)return '';
     if(meal[1].includes('IL Forno'))id='ilforno';
-    if(centric&&id==='dtf-bukit')id='dtf-klcc';
+    if(centric&&id==='dacheng')id='madamkwan';
     if(centric&&id==='abc')id='pelita';
     // In the included-breakfast version, the former snack slot becomes a full pre-show meal.
-    if(centric&&!id&&meal[0].startsWith('第二顿'))id='dtf-klcc';
+    if(centric&&!id&&meal[0].startsWith('第二顿'))id='madamkwan';
     return renderVenue(id,{slot:meal[0],included:id==='ilforno'});
   }
   function renderBackup(item) {
