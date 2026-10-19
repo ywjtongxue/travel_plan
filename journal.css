@@ -13,3 +13,5 @@ html{background:var(--cream)}body{background:var(--cream);color:var(--ink);font-
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 /* Keep the editorial palette readable in dense itinerary and dining details. */
 .restaurant-area,.restaurant-facts>div>span,.meal-slot,.restaurant-links a,.restaurant-context{color:#92677c}.restaurant-facts b,.restaurant-facts a,.restaurant-order li{color:#80536b}.order-label,.restaurant-links a,.confirmation-meta,.confirmation-source{color:#93647e}.confirmation-detail,.check-item span,.backup-reading p,.backup-story{color:#8c6a7e}.confirmation-item strong,.check-card h3,.packing-col h3,.kl-choice p{color:#80516d}.daily-details-heading>span,.time{color:#9b6680}.restaurant-storefront[hidden]{display:none!important}
+
+.rating-date{font-size:8px;color:#b49aa4}.dp-rating{flex-wrap:wrap;justify-content:flex-end;max-width:58%}.restaurant-links{flex-wrap:wrap}

@@ -47,7 +47,7 @@
   [...venueGroups].forEach(([city, venues], index) => tasks.push({
     id:'dining-verification-'+({'深圳':'shenzhen','香港':'hongkong','槟城':'penang','吉隆坡':'kuala-lumpur','马六甲':'melaka'}[city]||encodeURIComponent(city)), stage:1, category:'餐饮', when:city+' · 出发前 7–10 天',
     title:city+'餐厅资料核验',
-    detail:'落实具体分店，逐店核对大众点评评分与日期、实际人均、营业时间、菜单及门头来源。当前人均为规划预算；原行程的营业参考未作本次联网核验。店铺：'+venues.map(v=>v.name).join('、')+'。'
+    detail:'落实具体分店，逐店核对大众点评或 Google Maps 评分、来源与日期、实际人均、营业时间、菜单及门头来源。当前人均为规划预算；原行程的营业参考未作本次联网核验。店铺：'+venues.map(v=>v.name).join('、')+'。'
   }));
   const storageKey = 'tripChecksV3';
   const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');

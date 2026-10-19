@@ -29,8 +29,8 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style><style>[hidden]{display:none!important}.photo-card{min-width:0}.photo-card figcaption{position:static!important;line-height:1.7;overflow-wrap:anywhere}.photo-open{overflow:hidden}.image-failed{display:grid;place-items:center;height:100%;padding:18px;font-size:13px;line-height:1.8}.image-failed[hidden]{display:none!important}@media(max-width:820px){.main-nav{overflow:visible;gap:2px}.nav-btn{flex:1 1 0;min-width:0!important;font-size:11px;padding:5px 1px;white-space:nowrap}.nav-btn span{font-size:19px}.sidebar{padding-left:6px;padding-right:6px}.backup-cover .photo-card figcaption{padding:8px 9px;font-size:12px}.backup-cover .photo-credit{padding:0 9px 10px}}@media(max-width:370px){.nav-btn{font-size:10px}}</style><link rel="stylesheet" href="mobile.css?v=20261020-journal">
 <link rel="preload" as="image" href="assets/destination-art.png?v=20261020-journal" fetchpriority="high">
-<link rel="stylesheet" href="journal.css?v=20261020-journal">
-<script src="restaurants.js?v=20261020-journal"></script><script src="editorial.js?v=20261020-journal"></script>
+<link rel="stylesheet" href="journal.css?v=20261020-maps">
+<script src="restaurants.js?v=20261020-maps"></script><script src="editorial.js?v=20261020-journal"></script>
 <script>if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash==='#dayPlanner')history.replaceState(null,'',location.pathname+location.search);</script>
 </head>
 <body>
@@ -244,6 +244,6 @@ document.querySelector('.journey-start').addEventListener('click',e=>{e.preventD
 choosePhoneDay(0);window.scrollTo({top:0,behavior:'instant'});
 window.addEventListener('pageshow',()=>{if(document.getElementById('days').classList.contains('active')&&!location.hash)window.scrollTo({top:0,behavior:'instant'})});
 document.addEventListener('click',e=>{const day=e.target.closest('.day-tab');if(day){const i=Number(day.dataset.day);document.getElementById('phoneDay').value=i;document.getElementById('prevDay').disabled=i===0;document.getElementById('nextDay').disabled=i===days.length-1}});
-</script><script src="confirmations.js?v=20261020-journal"></script>
+</script><script src="confirmations.js?v=20261020-maps"></script>
 </body>
 </html>
