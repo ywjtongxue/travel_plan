@@ -1,7 +1,7 @@
 // Stable IDs keep confirmation state independent of grouping and display order.
 (() => {
   const stages = ['订票与预订时', '出发前 7–10 天', '出发前 1–2 天', '出行当天 / 启用备选前'];
-  const categories = ['交通', '住宿', '活动', '餐饮', '证件与通信', '天气', '预算'];
+  const categories = ['交通', '住宿', '活动', '餐饮', '证件与通信', '天气', '预算', '购物'];
   const tasks = [
     {id:'flights', stage:0, category:'交通', when:'12/25 · 12/28 · 01/03', title:'三段航班订单与机票权益', detail:'核对 HO1881、UO746、FM882 的出票状态、起降时间、航站楼、行李额与餐食；返程 FM882 计划 14:20 起飞。'},
     {id:'hk-rail', legacy:'0-4', stage:0, category:'交通', when:'12/26', title:'福田 ⇄ 西九龙往返高铁', detail:'开售后确定去回程车次，按回程时间安排晚餐、维港停留与通关。'},
@@ -39,6 +39,11 @@
     {id:'melaka-river', stage:3, category:'活动', when:'01/01', title:'鸡场街夜市与河船', detail:'核对夜市开放、游船班次与票价，按回程时间决定是否体验。'},
     {id:'religious-sites', stage:3, category:'活动', when:'当天 / 启用备选前', title:'宗教场所参观规则', detail:'核对祈祷时段、访客开放范围、着装、摄影和车辆临停规则；粉红清真寺主行程只看外观。'}
   ];
+  tasks.push(
+    {id:'gifts-hongkong',stage:1,category:'购物',when:'12/26–27 · 购物前',title:'香港非食品伴手礼',detail:'核对 G.O.D. 顺路门店、营业与所选布类商品；电车商品仅在原路线前往港岛时考虑。迪士尼徽章和布包核对款式与价格；不安排食品、玻璃、液体或易折模型。'},
+    {id:'gifts-penang',stage:1,category:'购物',when:'12/29–30 · 老城散步',title:'槟城蜡染与插画店',detail:'落实 George Town 顺路工艺店、作者与营业时间，核对蜡染面料、工艺、产地及价格；Hin Bus Depot 市集须查具体日期，不能当作每日营业。'},
+    {id:'gifts-kl-airport',stage:2,category:'购物',when:'01/03 · 出发机场前',title:'吉隆坡机场购买与同款价差',detail:'先核对 FM882 实际航站楼、出境动线和店铺营业；确认 BOH、Beryl’s、Royal Selangor 是否在可达区域有目标款。市区拍同型号、同克重、同件数含税价，与机场价比较；仅有货且价差可接受才留机场买，不默认免税更便宜。购物不压缩值机、安检和登机余量。'}
+  );
   const venueGroups = new Map();
   Object.values(window.TravelDining?.venues || {}).forEach(venue => {
     if(!venueGroups.has(venue.city)) venueGroups.set(venue.city, []);
