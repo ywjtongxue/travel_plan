@@ -4,7 +4,7 @@
   const categories = ['交通', '住宿', '活动', '餐饮', '证件与通信', '天气', '预算', '购物'];
   const tasks = [
     {id:'flights', stage:0, category:'交通', when:'12/25 · 12/28 · 01/03', title:'三段航班订单与机票权益', detail:'核对 HO1881、UO746、FM882 的出票状态、起降时间、航站楼、行李额与餐食；返程 FM882 计划 14:20 起飞。'},
-    {id:'hk-rail', legacy:'0-4', stage:0, category:'交通', when:'12/26', title:'福田 ⇄ 西九龙往返高铁', detail:'开售后确定去回程车次，按回程时间安排晚餐、维港停留与通关。'},
+    {id:'hk-rail', legacy:'0-4', stage:0, category:'交通', when:'12/26', title:'福田 ⇄ 西九龙往返高铁', detail:'开售后确定去回程车次，按回程时间倒推佐敦晚餐与通关；至少提前60分钟到西九龙，去程通关延误时先删The Murray与金鱼街。'},
     {id:'ets', legacy:'0-6', stage:0, category:'交通', when:'12/30', title:'ETS 车票与送站车辆', detail:'确定 Butterworth → KL Sentral 车次；预约 Sunway 酒店经跨海公路直达火车站的车辆、费用和出发时间。'},
     {id:'melaka-car', legacy:'0-7', stage:0, category:'交通', when:'01/01', title:'布城、马六甲往返包车', detail:'确定车型、接送点、费用、停车安排和回程时间。'},
     {id:'hotels', stage:0, category:'住宿', when:'全程 9 晚', title:'酒店订单与吉隆坡住宿方案', detail:'核对四地入住日期、房型和早餐权益；确定吉隆坡连续 4 晚的酒店，按实付房费调整预算。'},
@@ -35,7 +35,7 @@
     {id:'night-food', stage:3, category:'餐饮', when:'12/29 · 01/02', title:'下山晚餐与散场夜宵', detail:'确认 New Lane、酒店附近店铺的晚间供应；夜宵按需要安排，演出前先吃足正餐。'},
     {id:'food-hours', stage:3, category:'餐饮', when:'当天 / 启用备选前', title:'餐厅营业与菜单', detail:'核对节假日营业、末单、预约、目标菜品与分量；Ho Kow 午后供应、Pak Putra 开门时间需单独确认。'},
     {id:'attraction-access', stage:3, category:'活动', when:'当天 / 启用备选前', title:'景点开放、门票与导览', detail:'核对侨生博物馆、Khoo Kongsi、山顶缆车、昂坪、康华利斯堡、伊斯兰艺术博物馆及娘惹家宅馆的开放区域、票价、维护和预约。'},
-    {id:'harbour-show', stage:3, category:'活动', when:'12/26', title:'维港灯光秀与天星小轮', detail:'查询当天灯光秀安排及渡轮班次、票价，再决定是否衔接中环。'},
+    {id:'harbour-show', stage:3, category:'活动', when:'12/26', title:'天星小轮班次与港岛街区', detail:'核对中环→尖沙咀班次、票价及天气；确认文武庙和中环街市开放、新兴食家营业与排队。美利按中环The Murray外观规划；若指赤柱美利楼须另改路线。本线参考用户提供点位，不声称已核验李现本人完整同款或机位。'},
     {id:'melaka-river', stage:3, category:'活动', when:'01/01', title:'鸡场街夜市与河船', detail:'核对夜市开放、游船班次与票价，按回程时间决定是否体验。'},
     {id:'religious-sites', stage:3, category:'活动', when:'当天 / 启用备选前', title:'宗教场所参观规则', detail:'核对祈祷时段、访客开放范围、着装、摄影和车辆临停规则；粉红清真寺主行程只看外观。'}
   ];

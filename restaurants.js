@@ -4,6 +4,7 @@ window.TravelDining = (() => {
   const entries = [
     make('fenghuanglou','凤凰楼','深圳','华强北 · 门店与路线待落实',['虾饺','红米肠','叉烧包'],'¥80'),
     make('huaxiange','华香鹅','深圳','笋岗 · 门店与路线待落实',['卤鹅拼盘','卤水豆腐','粿条汤'],'¥60'),
+    make('sunhing','新兴食家','香港','坚尼地城',['虾饺','烧卖','流沙包＋茶'],'HK$90'),
     make('australia','澳洲牛奶公司','香港','佐敦',['炒蛋多士','叉烧通粉','热奶茶'],'HK$75','07:30–22:00；周四常休'),
     make('kaikai','佳佳甜品','香港','佐敦',['芝麻糊','杏仁露','汤圆分食'],'HK$35','12:00–次日 03:00'),
     make('makman','麦文记面家','香港','佐敦',['鲜虾云吞面','鲮鱼球','蚝油菜心'],'HK$70'),
@@ -47,7 +48,7 @@ window.TravelDining = (() => {
   ];
   const venues = Object.fromEntries(entries.map(v => [v.id, v]));
   const mealIds = [
-    ['fenghuanglou','huaxiange'], ['australia','kaikai','makman'],
+    ['fenghuanglou','huaxiange'], ['sunhing','kaikai','makman'],
     [null,'royal','mainstreet','explorer'], ['tungchung-eatery',null,null,'teksen'],
     ['beehwa','ivy','cliff','888'], ['tohsoon','hameediyah',null,'mtr'],
     ['yutkee','koonkee','tokyo','kimlian'], ['oldtown','nancy','jonker88','famosa'],
