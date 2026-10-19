@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1240" viewBox="0 0 900 1240" role="img" aria-labelledby="title desc">
+<title id="title">元旦路线手记：吉隆坡、布城与马六甲</title><desc id="desc">07:15从吉隆坡酒店出发，布城外观短停，再往马六甲，游览红屋、圣保罗山、鸡场街与河岸，19:00返程。路线为行程示意。</desc>
+<defs><pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 2h12M3 0v12" stroke="#c49c93" stroke-opacity=".025"/></pattern><marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="m2 2 7 4-7 4" fill="none" stroke="#b27a89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="900" height="1240" rx="28" fill="#fcf7ed"/><rect width="900" height="1240" rx="28" fill="url(#paper)"/>
+<rect x="31" y="31" width="838" height="1178" rx="21" fill="none" stroke="#ddbbb7" stroke-width="2" stroke-dasharray="4 8"/>
+<g font-family="Georgia,'Songti SC','Microsoft YaHei',serif" fill="#794b5c">
+<text x="67" y="93" font-family="sans-serif" font-size="17" letter-spacing="5">01.01 / NEW YEAR'S DAY</text><text x="65" y="154" font-size="45">布城与马六甲</text><text x="68" y="192" font-family="sans-serif" font-size="18" fill="#b28c91">吉隆坡往返 · 一天的路线手记</text>
+<path d="M280 366C470 362 555 364 573 408S537 449 500 456" stroke="#b27a89" stroke-width="4" stroke-dasharray="9 12" marker-end="url(#arrow)" fill="none"/>
+<path d="M348 620C430 651 638 623 678 676S690 780 605 819" stroke="#b27a89" stroke-width="4" stroke-dasharray="9 12" marker-end="url(#arrow)" fill="none"/>
+<path d="M675 926C796 820 793 605 761 486S715 288 653 267" stroke="#bda2a0" stroke-width="3" stroke-dasharray="7 12" marker-end="url(#arrow)" fill="none"/>
+<!-- Kuala Lumpur: a small skyline, not a street map. -->
+<g stroke="#85636b" stroke-width="2.8" stroke-linejoin="round" fill="#ead6cd">
+<path d="M115 353v-103h32v103m-36-79h40m-43 25h46m-45 25h44M128 250v-36l4-16 4 16v36"/><path d="M163 353v-103h32v103m-36-79h40m-43 25h46m-45 25h44M176 250v-36l4-16 4 16v36"/><path d="M147 282h16v12h-16"/>
+<path d="M91 354h133M205 352v-63h25v63M77 352v-49h25" fill="none"/>
+</g>
+<circle cx="267" cy="287" r="19" fill="#b4788a"/><text x="267" y="294" text-anchor="middle" fill="#fff9f0" font-family="sans-serif" font-size="18">1</text>
+<text x="301" y="280" font-size="30">吉隆坡酒店</text><text x="302" y="316" font-family="sans-serif" font-size="18" fill="#a48088">07:15 出发 · 行李留在酒店</text>
+<!-- Putrajaya: dome and lake. -->
+<g stroke="#9b7b7e" stroke-width="2.5" stroke-linejoin="round"><path d="M117 574v-56h119v56M130 518c0-46 92-46 92 0M175 483v-22m-5 4h10M117 574h119M143 574v-28q13-20 26 0v28m14 0v-28q13-20 26 0v28" fill="#dfb8bb"/><path d="M245 574V457h16v117m-21-117h26l-13-19zM249 438v-18" fill="#ead5ca"/><path d="M98 591q40-12 82 0t92 0M110 609q40-12 82 0t72 0" fill="none" stroke="#a8bcbc"/></g>
+<circle cx="318" cy="503" r="19" fill="#b4788a"/><text x="318" y="510" text-anchor="middle" fill="#fff9f0" font-family="sans-serif" font-size="18">2</text>
+<text x="351" y="496" font-size="30">布城 · 粉红清真寺</text><text x="352" y="533" font-family="sans-serif" font-size="18" fill="#a48088">08:15 左右 · 湖岸外观 30–40 分钟</text><text x="352" y="566" font-family="sans-serif" font-size="18" fill="#a48088">短停后继续前往马六甲</text>
+<!-- Melaka: red church, shophouses and the river. -->
+<g stroke="#9e7077" stroke-width="2.8" stroke-linejoin="round"><path d="M224 915v-91l70-49 70 49v91z" fill="#cd8c88"/><path d="M275 793v-38h38v38m-19-38v-22m-11 13h22M277 915v-42q17-26 34 0v42M243 853v-22h16v22m70 0v-22h16v22" fill="#efd9c8"/><path d="M371 916v-89h59v89m0 0v-71h56v71m0 0v-97h60v97" fill="#ead6b5"/><path d="m370 827 30-23 30 23m0 18 28-22 28 22m0-26 30-24 30 24" fill="#bb8d7b"/><path d="M387 855h11v18h-11m16-18h11v18h-11m39-1h12v18h-12m44-26h13v20h-13m18-20h13v20h-13" fill="#9cafa9"/><path d="M189 947q85-25 167 0t173 0t143 0m-455 20q86-24 168 0t170 0t100 0" fill="none" stroke="#a3b8b5"/></g>
+<circle cx="295" cy="720" r="19" fill="#b4788a"/><text x="295" y="727" text-anchor="middle" fill="#fff9f0" font-family="sans-serif" font-size="18">3</text>
+<text x="329" y="713" font-size="30">马六甲 · 古城与河岸</text><text x="329" y="750" font-family="sans-serif" font-size="18" fill="#a48088">红屋 → 圣保罗山 → 鸡场街 → 马六甲河</text>
+<text x="722" y="642" transform="rotate(90 722 642)" font-family="sans-serif" font-size="17" fill="#ae8c91" letter-spacing="2">RETURN TO KUALA LUMPUR</text>
+<rect x="80" y="1011" width="740" height="133" rx="17" fill="#f3e3dc"/>
+<text x="105" y="1052" font-size="26">19:00 左右 · 返回吉隆坡</text><text x="105" y="1091" font-family="sans-serif" font-size="18" fill="#a48088">按包车与路况安排返程，晚间住回同一家酒店</text>
+<text x="69" y="1180" font-family="sans-serif" font-size="12" fill="#bd9ca0" letter-spacing="3">TWO GIRLS / TEN DAYS</text><text x="830" y="1180" text-anchor="end" font-family="sans-serif" font-size="12" fill="#bd9ca0" letter-spacing="2">ROUTE SKETCH · 07</text>
+</g></svg>

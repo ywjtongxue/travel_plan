@@ -39,6 +39,16 @@
     {id:'melaka-river', stage:3, category:'活动', when:'01/01', title:'鸡场街夜市与河船', detail:'核对夜市开放、游船班次与票价，按回程时间决定是否体验。'},
     {id:'religious-sites', stage:3, category:'活动', when:'当天 / 启用备选前', title:'宗教场所参观规则', detail:'核对祈祷时段、访客开放范围、着装、摄影和车辆临停规则；粉红清真寺主行程只看外观。'}
   ];
+  const venueGroups = new Map();
+  Object.values(window.TravelDining?.venues || {}).forEach(venue => {
+    if(!venueGroups.has(venue.city)) venueGroups.set(venue.city, []);
+    venueGroups.get(venue.city).push(venue);
+  });
+  [...venueGroups].forEach(([city, venues], index) => tasks.push({
+    id:'dining-verification-'+({'深圳':'shenzhen','香港':'hongkong','槟城':'penang','吉隆坡':'kuala-lumpur','马六甲':'melaka'}[city]||encodeURIComponent(city)), stage:1, category:'餐饮', when:city+' · 出发前 7–10 天',
+    title:city+'餐厅资料核验',
+    detail:'落实具体分店，逐店核对大众点评评分与日期、实际人均、营业时间、菜单及门头来源。当前人均为规划预算；原行程的营业参考未作本次联网核验。店铺：'+venues.map(v=>v.name).join('、')+'。'
+  }));
   const storageKey = 'tripChecksV3';
   const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
   const done = task => Object.hasOwn(saved, task.id) ? saved[task.id] === true : Boolean(task.legacy && saved[task.legacy]);
